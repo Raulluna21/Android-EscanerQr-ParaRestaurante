@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnscanner"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/btn_scan_design"
+        android:text="Escanear del menú"
+        android:textColor="@drawable/txt_scan_design"
+        app:layout_constraintEnd_toEndOf="@+id/btnconnect"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnconnect"
+        app:layout_constraintTop_toBottomOf="@+id/btnconnect" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="37dp"
+        android:background="@mipmap/captura"
+        app:layout_constraintBottom_toTopOf="@+id/NameClient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnconnect"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/btn_scan_design"
+        android:text="Comprobar Red"
+        android:textColor="@drawable/txt_scan_design"
+        app:layout_constraintBottom_toTopOf="@+id/btnscanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameClient" />
+
+    <EditText
+        android:id="@+id/NameClient"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/custom_input"
+        android:cursorVisible="true"
+        android:drawableStart="@drawable/custom_user_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/TutoAnim"
+        android:layout_width="110dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnscanner"
+        app:layout_constraintVertical_bias="0.90999997"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="tutohelp.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Las Che Alitas</string>
+    <string name="app_lista">Lista simple</string>
+    <string name="regresar">Regresar</string>
+    <string name="text_btn_regresar">Regresar</string>
+    <string name="text_detalles_del_pedido">Detalles del pedido:</string>
+</resources>
+

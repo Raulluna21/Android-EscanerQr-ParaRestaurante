@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/hamburguer"
+    tools:context=".Splash">
+
+
+    <ImageView
+        android:id="@+id/logo_splash"
+        android:layout_width="338dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="240dp"
+        android:src="@drawable/captura"
+        app:layout_constraintBottom_toTopOf="@+id/textsplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textsplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/bungee"
+        android:text="Tizayuca, Hidalgo"
+        android:textAlignment="center"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/textsplash2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_splash" />
+
+    <TextView
+        android:id="@+id/textsplash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/bungee"
+        android:text="sucursal 1"
+        android:textAlignment="center"
+        android:textColor="@color/zxing_status_text"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsplash" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
